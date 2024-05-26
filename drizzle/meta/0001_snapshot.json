@@ -1,0 +1,109 @@
+{
+  "id": "758dc987-5b6f-4184-be92-40f3b25517c5",
+  "prevId": "6936f6d5-bb70-4458-a0c6-e7435eb0c2a2",
+  "version": "6",
+  "dialect": "postgresql",
+  "tables": {
+    "public.forms": {
+      "name": "forms",
+      "schema": "",
+      "columns": {
+        "unique_id": {
+          "name": "unique_id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "'6fa46fa2-99e9-4852-817a-bf46b1e4362b'"
+        },
+        "title": {
+          "name": "title",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "email": {
+          "name": "email",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "phone_number": {
+          "name": "phone_number",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_graduate": {
+          "name": "is_graduate",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "public.form_data": {
+      "name": "form_data",
+      "schema": "",
+      "columns": {
+        "unique_id": {
+          "name": "unique_id",
+          "type": "uuid",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "'e5f713b1-f3fb-4153-9f51-3b1cdf5962d3'"
+        },
+        "form_title": {
+          "name": "form_title",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "email": {
+          "name": "email",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "phone_number": {
+          "name": "phone_number",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_graduate": {
+          "name": "is_graduate",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
